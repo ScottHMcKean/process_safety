@@ -1,0 +1,8 @@
+foundation_endpoint: databricks-meta-llama-3-1-70b-instruct
+embedding_endpoint: databricks-gte-large-en
+valid_categories: "Pressed, Pressurized Systems, Manual Tools, Other, Chemical Substances, Liquid Metal, Electrical, Confined Space, Stored Energy, Suspended Loads, Poll, Fall, Bees, Traffic, Projection of Fragments, Venomous Animals, Plates, Vehicles and Mobile Equipment, Choco, Electrical, Burn, Individual Protection Equipment"
+prompt_template: "Classify the safety incident below into one of these categories based on the description. Only respond with the category name. \n Valid Categories: {valid_categories} \n The incident comes from the {industry_sector} industry sector. The incident is described as follows: {description} \n Category:"
+input_variables:
+  - valid_categories
+  - industry_sector
+  - description
